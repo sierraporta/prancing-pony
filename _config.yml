@@ -1,13 +1,13 @@
-title: "My Blogs Name"
-author: "Default Author Name"
-description: "Some short description of your blog can go here." # This will show up in places like twitter, linkedin, etc, if you share your sites url as a post.
+title: "Prancing Pony David Blog´s"
+author: "David Sierra Porta"
+description: "Este blog es un espacio dedicado a compartir mis experiencias y reflexiones en los campos de la ciencia de datos, física, matemáticas y otras áreas relacionadas. A través de historias, comentarios y análisis, exploraré conceptos complejos, descubrimientos recientes, aplicaciones prácticas y desafíos personales que he encontrado en mi trayectoria profesional y académica. Mi objetivo es inspirar a otros entusiastas de la ciencia y la tecnología, compartir conocimientos útiles, y fomentar el aprendizaje colaborativo en temas tan apasionantes como la estadística, el modelado matemático y el análisis de datos."
 
 # Email / Social media user names used by the minima theme:
 # All of these are optional and can be removed or commented out
-email: "example@mail.com"
-twitter_username: "twitteruser"
-github_username: "githubuser"
-linkedin_username: "linkedinuser"
+email: "sierraporta@gmail.com"
+#twitter_username: "twitteruser"
+github_username: "sierraporta"
+#linkedin_username: "linkedinuser"
 #facebook_username: username
 #flickr_username: username
 #instagram_username: username
