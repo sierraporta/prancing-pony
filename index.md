@@ -1,4 +1,4 @@
-![pony](b62214511b27f1404439bd4942ff3531.jpg)
+![pony](PrancingPonyBanner.png)
 
 Este blog es un espacio dedicado a compartir mis experiencias y reflexiones en los campos de la ciencia de datos, física, matemáticas y otras áreas relacionadas. A través de historias, comentarios y análisis, exploraré conceptos complejos, descubrimientos recientes, aplicaciones prácticas y desafíos personales que he encontrado en mi trayectoria profesional y académica. Mi objetivo es inspirar a otros entusiastas de la ciencia y la tecnología, compartir conocimientos útiles, y fomentar el aprendizaje colaborativo en temas tan apasionantes como la estadística, el modelado matemático y el análisis de datos. ¡Bienvenidos y espero que disfruten el viaje!
 
