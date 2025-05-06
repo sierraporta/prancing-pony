@@ -29,7 +29,7 @@ El **determinante de Cayley-Menger** es una herramienta fundamental en geometrí
 El determinante de Cayley-Menger se puede aplicar a un conjunto de puntos en un espacio Euclidiano $$\mathbb{R}^k$$ con $$k \geq n$$, donde $$n$$ es el número de dimensiones del simplex. En un espacio bidimensional o tridimensional, este determinante se utiliza para calcular el volumen de un triángulo o un tetraedro, respectivamente, a partir de las distancias entre los puntos.
 Para cuatro puntos $$( A_0, A_1, A_2, A_3 )$$ en $$\mathbb{R}^k$$, el determinante de Cayley-Menger se define como ([https://en.wikipedia.org/wiki/Cayley–Menger_determinant](https://en.wikipedia.org/wiki/Cayley–Menger_determinant)):
 
-\begin{equation}
+$$
 \Delta_{CM}(d_{ij}) = \begin{vmatrix}
 0 & d_{01}^2 & d_{02}^2 & d_{03}^2 & 1 \\
 d_{01}^2 & 0 & d_{12}^2 & d_{13}^2 & 1 \\
@@ -37,16 +37,16 @@ d_{02}^2 & d_{12}^2 & 0 & d_{23}^2 & 1 \\
 d_{03}^2 & d_{13}^2 & d_{23}^2 & 0 & 1 \\
 1 & 1 & 1 & 1 & 0
 \end{vmatrix} = 0
-\end{equation}
+$$
 
 Donde $$d_{ij}$$ son las distancias Euclidianas entre los puntos $$A_i$$ y $$A_j$$. Si este determinante es igual a cero, las distancias entre los puntos pueden ser consistentes con un plano. Si no es igual a cero, el conjunto de puntos no está en un plano, sugiriendo que el espacio tiene curvatura.
 
 ### Cálculo del Volumen de un Simplex
 El volumen $$V$$ de un simplex (como un triángulo en 2D o un tetraedro en 3D) en $$\mathbb{R}^n$$ se puede calcular usando el determinante de Cayley-Menger. Para un tetraedro en 3D, el volumen $$V$$ está relacionado con el determinante de Cayley-Menger de la siguiente forma:
 
-\begin{equation}
+$$
 288V^2 = \Delta_{CM}(|\mathbf{x}_i - \mathbf{x}_j|)
-\end{equation}
+$$
 
 Donde $$\mathbf{x}_i$$ y $$\mathbf{x}_j$$ son los vectores que representan las posiciones de los puntos. El determinante $$\Delta_{CM}$$ nos da una medida del volumen del tetraedro, y si este volumen es cero, entonces los puntos no están en un espacio tridimensional regular (es decir, no están en un plano o una esfera).
 
@@ -54,39 +54,39 @@ Dado cualquier conjunto de 6 números $$\alpha_{ij} \in (0, \pi)$$, con $$0 \leq
 
 Parametrizamos la esfera unitaria $$S^2$$ con coordenadas polares:
 
-\begin{equation}
+$$
 [0, \pi] \times [-\pi, \pi] \to (\theta, \phi) \mapsto (\sin \theta \cos \phi, \sin \theta \sin \phi, \cos \theta) \in S^2 \subset \mathbb{R}^3
-\end{equation}
+$$
 
 Una vez que hemos calculado el volumen del simplex utilizando el determinante de Cayley-Menger, el siguiente paso es calcular los valores de $$e_1$$, $$e_2$$ y $$e_3$$. Esto es similar a parametrizar la esfera. Estos valores son fundamentales porque nos permiten determinar la curvatura del espacio en el que se encuentran los puntos, y en última instancia, calcular el radio de la esfera que podría contener estas distancias.
 
 Para calcular $$(e_1, e_2, e_3)$$, primero debemos expresar las distancias en términos de los ángulos entre los puntos. Esto se puede hacer usando la fórmula de la ley de los cosenos esféricos para calcular los ángulos $$\phi_i$$ entre los puntos en la superficie de la esfera:
 
-\begin{equation}
+$$
 \cos \phi_i = e_{jk}
-\end{equation}
+$$
 
 Aquí, \( i, j, k \) son índices que representan las permutaciones de los puntos, y \( e_{jk} \) es la relación de los ángulos calculados entre las distancias entre los puntos en cuestión. Una vez calculados estos ángulos, los valores \( e_1, e_2, e_3 \) se pueden obtener de la siguiente manera:
 
-\begin{equation}
+$$
 e_1 = \cos(\phi_{12} - \phi_{13})
-\end{equation}
+$$
 
-\begin{equation}
+$$
 e_2 = \cos(\phi_{13} - \phi_{23})
-\end{equation}
+$$
 
-\begin{equation}
+$$
 e_3 = \cos(\phi_{12} - \phi_{23})
-\end{equation}
+$$
 
 Estos valores nos proporcionan la relación entre los ángulos y las distancias de los puntos, lo que nos da una representación precisa de la curvatura del espacio.
 
 Finalmente, para determinar el radio de la esfera en la que se encuentran estos puntos, usamos la ecuación siguiente, que involucra las distancias $$d_{ij}$$ y los valores de $$( e_1, e_2, e_3 )$$:
 
-\begin{equation}
+$$
 1 - e_1^2 - e_2^2 - e_3^2 + 2 e_1 e_2 e_3 = 0
-\end{equation}
+$$
 
 Esta ecuación debe cumplirse para que las distancias entre los puntos puedan ser mapeadas sobre la superficie de una esfera. 
 
