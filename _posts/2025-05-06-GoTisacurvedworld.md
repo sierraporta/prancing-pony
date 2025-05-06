@@ -1,4 +1,3 @@
-%%latex
 # El Mundo de *Game of Thrones*: Más Allá de lo Plano
 Desde que era un niño, siempre me he sentido fascinado por los mundos mágicos y ficticios que habitan las historias épicas. Cada universo, con sus propias reglas, criaturas y tierras lejanas, ha sido una fuente inagotable de asombro y curiosidad. **El Señor de los Anillos** de J.R.R. Tolkien, con su inmenso mundo de la Tierra Media, fue uno de los primeros universos que me atrapó. La complejidad de sus mapas, las culturas, y las luchas entre el bien y el mal me inspiraron profundamente. Pero con el paso del tiempo, también me sumergí en otros mundos mágicos como **La Rueda del Tiempo** de Robert Jordan o **Cuentos de Terramar** de Ursula Le Guin, y, más recientemente, en el fascinante y crudo universo de **Juego de Tronos** creado por George R. R. Martin.
 
@@ -13,12 +12,12 @@ Durante mis años de maestría, uno de los libros técnicos que más me impresio
 Lo que me llamó particularmente la atención fue cuando Weinberg presentaba ejemplos de esta teoría aplicados a un mapa muy conocido: el de la Tierra Media de J.R.R. Tolkien. En su libro, Weinberg muestra las distancias entre varias ciudades clave en la Tierra Media, como Hobbiton, Erebor, Dagorlad, y la Ciudad de los Corsarios. Las distancias entre estas ciudades, que varían entre 735 y 1498 millas, se relacionan de forma similar a la ecuación que describen las distancias en una superficie plana.
 
 Las distancias eran como:
-- $d$(Hobbiton, Erebor) = 813 mi 
-- $d$(Erebor, Dagorlad) = 735 mi 
-- $d$(Dagorlad, City of Corsairs) = 780 mi 
-- $d$(City of Corsairs, Hobbiton) = 1112 mi 
-- $d$(Hobbiton, Dagorlad) = 960 mi 
-- $d$(Erebor, City of Corsairs) = 1498 mi
+- $$d$$(Hobbiton, Erebor) = 813 mi 
+- $$d$$(Erebor, Dagorlad) = 735 mi 
+- $$d$$(Dagorlad, City of Corsairs) = 780 mi 
+- $$d$$(City of Corsairs, Hobbiton) = 1112 mi 
+- $$d$$(Hobbiton, Dagorlad) = 960 mi 
+- $$d$$(Erebor, City of Corsairs) = 1498 mi
 
 ![tolkien](tolkienmap.png)
 
@@ -27,8 +26,8 @@ Lo curioso es que esta misma relación de distancias, aplicada a un mundo fictic
 ## Cálculo de las Distancias y el Determinante
 El **determinante de Cayley-Menger** es una herramienta fundamental en geometría y física para analizar las distancias entre puntos en un espacio Euclidiano. Este determinante permite determinar si un conjunto de puntos puede colocarse en un plano o si el espacio tiene curvatura, como ocurre en una esfera. El determinante de Cayley-Menger lleva el nombre de dos matemáticos: **Arthur Cayley**, un geómetra británico especializado en geometría algebraica, y **Karl Menger**, un joven profesor de geometría en la Universidad de Viena. Menger extendió los resultados algebraicos de Cayley para proponer un nuevo axioma de los espacios métricos utilizando conceptos de geometría de distancias hasta la equivalencia por congruencia. Este axioma dio lugar al determinante de Cayley-Menger, que generaliza una de las primeras fórmulas en geometría de distancias: la fórmula de Herón, que permite calcular el área de un triángulo dado sus longitudes de lados.
 
-El determinante de Cayley-Menger se puede aplicar a un conjunto de puntos en un espacio Euclidiano $\mathbb{R}^k$ con $k \geq n$, donde $n$ es el número de dimensiones del simplex. En un espacio bidimensional o tridimensional, este determinante se utiliza para calcular el volumen de un triángulo o un tetraedro, respectivamente, a partir de las distancias entre los puntos.
-Para cuatro puntos $( A_0, A_1, A_2, A_3 )$ en $\mathbb{R}^k$, el determinante de Cayley-Menger se define como ([https://en.wikipedia.org/wiki/Cayley–Menger_determinant](https://en.wikipedia.org/wiki/Cayley–Menger_determinant)):
+El determinante de Cayley-Menger se puede aplicar a un conjunto de puntos en un espacio Euclidiano $$\mathbb{R}^k$$ con $$k \geq n$$, donde $$n$$ es el número de dimensiones del simplex. En un espacio bidimensional o tridimensional, este determinante se utiliza para calcular el volumen de un triángulo o un tetraedro, respectivamente, a partir de las distancias entre los puntos.
+Para cuatro puntos $$( A_0, A_1, A_2, A_3 )$$ en $$\mathbb{R}^k$$, el determinante de Cayley-Menger se define como ([https://en.wikipedia.org/wiki/Cayley–Menger_determinant](https://en.wikipedia.org/wiki/Cayley–Menger_determinant)):
 
 \begin{equation}
 \Delta_{CM}(d_{ij}) = \begin{vmatrix}
@@ -40,28 +39,28 @@ d_{03}^2 & d_{13}^2 & d_{23}^2 & 0 & 1 \\
 \end{vmatrix} = 0
 \end{equation}
 
-Donde $d_{ij}$ son las distancias Euclidianas entre los puntos $A_i$ y $A_j$. Si este determinante es igual a cero, las distancias entre los puntos pueden ser consistentes con un plano. Si no es igual a cero, el conjunto de puntos no está en un plano, sugiriendo que el espacio tiene curvatura.
+Donde $$d_{ij}$$ son las distancias Euclidianas entre los puntos $$A_i$$ y $$A_j$$. Si este determinante es igual a cero, las distancias entre los puntos pueden ser consistentes con un plano. Si no es igual a cero, el conjunto de puntos no está en un plano, sugiriendo que el espacio tiene curvatura.
 
 ### Cálculo del Volumen de un Simplex
-El volumen $V$ de un simplex (como un triángulo en 2D o un tetraedro en 3D) en $\mathbb{R}^n$ se puede calcular usando el determinante de Cayley-Menger. Para un tetraedro en 3D, el volumen $V$ está relacionado con el determinante de Cayley-Menger de la siguiente forma:
+El volumen $$V$$ de un simplex (como un triángulo en 2D o un tetraedro en 3D) en $$\mathbb{R}^n$$ se puede calcular usando el determinante de Cayley-Menger. Para un tetraedro en 3D, el volumen $$V$$ está relacionado con el determinante de Cayley-Menger de la siguiente forma:
 
 \begin{equation}
 288V^2 = \Delta_{CM}(|\mathbf{x}_i - \mathbf{x}_j|)
 \end{equation}
 
-Donde $\mathbf{x}_i$ y $\mathbf{x}_j$ son los vectores que representan las posiciones de los puntos. El determinante $\Delta_{CM}$ nos da una medida del volumen del tetraedro, y si este volumen es cero, entonces los puntos no están en un espacio tridimensional regular (es decir, no están en un plano o una esfera).
+Donde $$\mathbf{x}_i$$ y $$\mathbf{x}_j$$ son los vectores que representan las posiciones de los puntos. El determinante $$\Delta_{CM}$$ nos da una medida del volumen del tetraedro, y si este volumen es cero, entonces los puntos no están en un espacio tridimensional regular (es decir, no están en un plano o una esfera).
 
-Dado cualquier conjunto de 6 números $\alpha_{ij} \in (0, \pi)$, con $0 \leq i < j \leq 3$ que satisfacen un conjunto apropiado de desigualdades triangulares. ¿Cuál es la condición adicional que debe cumplirse para tener 4 puntos $q_0, \dots, q_3$ en la esfera unitaria $S^2$ tal que la distancia geodésica $d(q_i, q_j) = \alpha_{ij}$?
+Dado cualquier conjunto de 6 números $$\alpha_{ij} \in (0, \pi)$$, con $$0 \leq i < j \leq 3$$ que satisfacen un conjunto apropiado de desigualdades triangulares. ¿Cuál es la condición adicional que debe cumplirse para tener 4 puntos $$q_0, \dots, q_3$$ en la esfera unitaria $$S^2$$ tal que la distancia geodésica $$d(q_i, q_j) = \alpha_{ij}$$?
 
-Parametrizamos la esfera unitaria $S^2$ con coordenadas polares:
+Parametrizamos la esfera unitaria $$S^2$$ con coordenadas polares:
 
 \begin{equation}
 [0, \pi] \times [-\pi, \pi] \to (\theta, \phi) \mapsto (\sin \theta \cos \phi, \sin \theta \sin \phi, \cos \theta) \in S^2 \subset \mathbb{R}^3
 \end{equation}
 
-Una vez que hemos calculado el volumen del simplex utilizando el determinante de Cayley-Menger, el siguiente paso es calcular los valores de $e_1$, $e_2$ y $e_3$. Esto es similar a parametrizar la esfera. Estos valores son fundamentales porque nos permiten determinar la curvatura del espacio en el que se encuentran los puntos, y en última instancia, calcular el radio de la esfera que podría contener estas distancias.
+Una vez que hemos calculado el volumen del simplex utilizando el determinante de Cayley-Menger, el siguiente paso es calcular los valores de $$e_1$$, $$e_2$$ y $$e_3$$. Esto es similar a parametrizar la esfera. Estos valores son fundamentales porque nos permiten determinar la curvatura del espacio en el que se encuentran los puntos, y en última instancia, calcular el radio de la esfera que podría contener estas distancias.
 
-Para calcular $(e_1, e_2, e_3)$, primero debemos expresar las distancias en términos de los ángulos entre los puntos. Esto se puede hacer usando la fórmula de la ley de los cosenos esféricos para calcular los ángulos $\phi_i$ entre los puntos en la superficie de la esfera:
+Para calcular $$(e_1, e_2, e_3)$$, primero debemos expresar las distancias en términos de los ángulos entre los puntos. Esto se puede hacer usando la fórmula de la ley de los cosenos esféricos para calcular los ángulos $$\phi_i$$ entre los puntos en la superficie de la esfera:
 
 \begin{equation}
 \cos \phi_i = e_{jk}
@@ -83,7 +82,7 @@ e_3 = \cos(\phi_{12} - \phi_{23})
 
 Estos valores nos proporcionan la relación entre los ángulos y las distancias de los puntos, lo que nos da una representación precisa de la curvatura del espacio.
 
-Finalmente, para determinar el radio de la esfera en la que se encuentran estos puntos, usamos la ecuación siguiente, que involucra las distancias $d_{ij}$ y los valores de $( e_1, e_2, e_3 )$:
+Finalmente, para determinar el radio de la esfera en la que se encuentran estos puntos, usamos la ecuación siguiente, que involucra las distancias $$d_{ij}$$ y los valores de $$( e_1, e_2, e_3 )$$:
 
 \begin{equation}
 1 - e_1^2 - e_2^2 - e_3^2 + 2 e_1 e_2 e_3 = 0
@@ -95,12 +94,12 @@ Esta ecuación debe cumplirse para que las distancias entre los puntos puedan se
 Para aplicar este concepto al mundo de *Game of Thrones*, primero debemos calcular las distancias entre las ciudades clave del mundo ficticio, como *Pentos*, *Bravvos*, *Qohor* y *Volantis*. Usando el determinante de Cayley-Menger, podemos verificar si estas ciudades pueden ubicarse en un plano, o si el espacio en el que se encuentran tiene curvatura, lo que sugiere que el mundo de *Game of Thrones* podría ser esférico.
 De esta manera, el determinante de Cayley-Menger nos permite hacer una distinción clara entre un espacio plano y uno curvado utilizando solo distancias simples entre puntos. Las distancias son ahora las cuales ha sido obtenidas luego de leer detallada y minuciosamente [https://www.worldanvil.com/w/got-rewritten/a/travel](https://www.worldanvil.com/w/got-rewritten/a/travel) y [https://atlasoficeandfireblog.wordpress.com/2017/08/20/geographic-map-15-the-free-cities/](https://atlasoficeandfireblog.wordpress.com/2017/08/20/geographic-map-15-the-free-cities/):
 
-- $d$(Pentos, Bravvos) = 720 mi 
-- $d$(Pentos, Qohor) = 900 mi 
-- $d$(Pentos, Volantis) = 1200 mi 
-- $d$(Bravvos, Qohor) = 1200 mi 
-- $d$(Bravvos, Volantis) = 1900 mi 
-- $d$(Qohor, Volantis) = 900 mi
+- $$d$$(Pentos, Bravvos) = 720 mi 
+- $$d$$(Pentos, Qohor) = 900 mi 
+- $$d$$(Pentos, Volantis) = 1200 mi 
+- $$d$$(Bravvos, Qohor) = 1200 mi 
+- $$d$$(Bravvos, Volantis) = 1900 mi 
+- $$d$$(Qohor, Volantis) = 900 mi
 
 ![GoT1](GoT1.jpg) ![GoT2](GoT2.png)
 
@@ -182,10 +181,10 @@ Lo cual da como resultado:
 
 Tras aplicar el método matemático del determinante de Cayley-Menger a las distancias entre las ciudades clave del mundo de *Game of Thrones*, hemos logrado obtener cuatro posibles soluciones para el radio de las esferas que podrían representar la curvatura del espacio en este mundo ficticio. Las soluciones obtenidas son:
 
-- $R_1 \approx 172.085 \, \text{mi}$
-- $R_2 \approx 649.9242 \, \text{mi}$
-- $R_3 \approx 754.432 \, \text{mi}$
-- $R_4 \approx 2598.1423 \, \text{mi}$
+- $$R_1 \approx 172.085 \, \text{mi}$$
+- $$R_2 \approx 649.9242 \, \text{mi}$$
+- $$R_3 \approx 754.432 \, \text{mi}$$
+- $$R_4 \approx 2598.1423 \, \text{mi}$$
 
 Estas soluciones indican que, en realidad, el mundo de *Game of Thrones* no es plano, sino que tiene una curvatura esférica. Las distancias entre las ciudades no siguen un patrón lineal que se asociaría con un espacio plano, sino que presentan una estructura que puede ser mejor comprendida mediante la geometría esférica.
 
