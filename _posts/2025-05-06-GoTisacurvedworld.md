@@ -12,14 +12,14 @@ Durante mis años de maestría, uno de los libros técnicos que más me impresio
 Lo que me llamó particularmente la atención fue cuando Weinberg presentaba ejemplos de esta teoría aplicados a un mapa muy conocido: el de la Tierra Media de J.R.R. Tolkien. En su libro, Weinberg muestra las distancias entre varias ciudades clave en la Tierra Media, como Hobbiton, Erebor, Dagorlad, y la Ciudad de los Corsarios. Las distancias entre estas ciudades, que varían entre 735 y 1498 millas, se relacionan de forma similar a la ecuación que describen las distancias en una superficie plana.
 
 Las distancias eran como:
-- $$d$$(Hobbiton, Erebor) = 813 mi 
-- $$d$$(Erebor, Dagorlad) = 735 mi 
-- $$d$$(Dagorlad, City of Corsairs) = 780 mi 
-- $$d$$(City of Corsairs, Hobbiton) = 1112 mi 
-- $$d$$(Hobbiton, Dagorlad) = 960 mi 
-- $$d$$(Erebor, City of Corsairs) = 1498 mi
+- $d$(Hobbiton, Erebor) = 813 mi 
+- $d$(Erebor, Dagorlad) = 735 mi 
+- $d$(Dagorlad, City of Corsairs) = 780 mi 
+- $d$(City of Corsairs, Hobbiton) = 1112 mi 
+- $d$(Hobbiton, Dagorlad) = 960 mi 
+- $d$(Erebor, City of Corsairs) = 1498 mi
 
-![tolkien](tolkienmap.png)
+![tolkien](./tolkienmap.png)
 
 Lo curioso es que esta misma relación de distancias, aplicada a un mundo ficticio como la Tierra Media, nos brinda una excelente oportunidad para explorar conceptos más profundos de geometría no euclidiana. Así como Weinberg utilizó las distancias de la Tierra Media para ilustrar un concepto matemático, nosotros podemos aplicar este mismo enfoque al mundo de Game of Thrones, para demostrar que no es plano, sino que tiene una curvatura esférica. Al comparar estas distancias en un mundo ficticio con principios matemáticos reales, podemos hacer un puente entre la ciencia y la fantasía, revelando una perspectiva completamente nueva sobre los mundos que amamos.
 
