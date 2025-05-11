@@ -16,7 +16,7 @@ github_username: "sierraporta"
 #googleplus_username: +username
 
 baseurl: "/prancing-pony.github.io"  # Si tienes un subdirectorio
-url: "https://sierraporta.github.io"  # URL de tu repositorio
+url: "https://sierraporta"  # URL de tu repositorio
 
 #########################################################################################
 ######### Nothing below needs to be changed (unless you know what you're doing) #########
