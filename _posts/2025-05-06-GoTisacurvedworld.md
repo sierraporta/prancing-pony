@@ -19,7 +19,7 @@ Las distancias eran como:
 - $d$(Hobbiton, Dagorlad) = 960 mi 
 - $d$(Erebor, City of Corsairs) = 1498 mi
 
-<img src="_posts/tolkienmap.png" alt="tolkien">
+<img src="https://github.com/sierraporta/prancing-pony.github.io/edit/main/_posts/tolkienmap.png" alt="tolkien">
 
 Lo curioso es que esta misma relación de distancias, aplicada a un mundo ficticio como la Tierra Media, nos brinda una excelente oportunidad para explorar conceptos más profundos de geometría no euclidiana. Así como Weinberg utilizó las distancias de la Tierra Media para ilustrar un concepto matemático, nosotros podemos aplicar este mismo enfoque al mundo de Game of Thrones, para demostrar que no es plano, sino que tiene una curvatura esférica. Al comparar estas distancias en un mundo ficticio con principios matemáticos reales, podemos hacer un puente entre la ciencia y la fantasía, revelando una perspectiva completamente nueva sobre los mundos que amamos.
 
