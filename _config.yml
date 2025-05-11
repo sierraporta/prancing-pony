@@ -30,7 +30,7 @@ kramdown:
   input: GFM
   math_engine: mathjax
   syntax_highlighter: rouge
-  smart_quotes: nil
+  smart_quotes: ["apos", "apos", "quot", "quot"]
     
 plugins:
   - jekyll-feed
