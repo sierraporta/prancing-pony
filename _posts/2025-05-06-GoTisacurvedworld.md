@@ -1,10 +1,3 @@
----
-layout: post
-title: "GoT is a curved world"
-date: 2025-05-06
-math: true
----
-
 # El Mundo de *Game of Thrones*: Más Allá de lo Plano
 Desde que era un niño, siempre me he sentido fascinado por los mundos mágicos y ficticios que habitan las historias épicas. Cada universo, con sus propias reglas, criaturas y tierras lejanas, ha sido una fuente inagotable de asombro y curiosidad. **El Señor de los Anillos** de J.R.R. Tolkien, con su inmenso mundo de la Tierra Media, fue uno de los primeros universos que me atrapó. La complejidad de sus mapas, las culturas, y las luchas entre el bien y el mal me inspiraron profundamente. Pero con el paso del tiempo, también me sumergí en otros mundos mágicos como **La Rueda del Tiempo** de Robert Jordan o **Cuentos de Terramar** de Ursula Le Guin, y, más recientemente, en el fascinante y crudo universo de **Juego de Tronos** creado por George R. R. Martin.
 
