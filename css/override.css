@@ -1,3 +1,9 @@
+/* Anulamos sólo dentro de .custom-code-wrapper el fondo de highlight.js */
+.custom-code-wrapper pre,
+.custom-code-wrapper code.hljs {
+  background-color: transparent !important;
+}
+
 hr {
   margin-top: 30px;
   margin-bottom: 20px;
