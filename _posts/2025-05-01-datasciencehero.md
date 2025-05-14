@@ -6,7 +6,7 @@ Sin embargo, convertirse en un Data Scientist no es tarea sencilla; implica un r
 
 Pero, ¿qué necesitas realmente para transformarte en un auténtico "Data Hero"? A continuación, exploraremos cada una de las etapas esenciales que te llevarán desde ser un principiante absoluto hasta convertirte en un auténtico "Data Hero", capaz de transformar datos complejos en soluciones prácticas y efectivas para el mundo real.
 
-![DataScieceRoute](Figures/datascienceroute.png)
+![DataScieceRoute]({{ site.baseurl }}/Figures/datascienceroute.png)
 Ruta a Ciencia de Datos.
 
 1. **Fundamentos matemáticos: la base del éxito**
