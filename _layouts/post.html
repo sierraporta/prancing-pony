@@ -30,11 +30,7 @@ layout: default
   <button id="dislike-btn">👎 <span id="dislike-count">0</span></button>
 </div>
 
-  <div class="share-links">
-    {% include sharelinks.html %}
-  </div>
-
-<script>
+  <script>
 (function(){
   //​ Identificador único para este post (usa la URL o slug)
   const slug = '{{ page.url }}';
@@ -68,6 +64,10 @@ layout: default
   });
 })();
 </script>
+
+  <div class="share-links">
+    {% include sharelinks.html %}
+  </div>
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
