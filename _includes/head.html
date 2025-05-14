@@ -27,23 +27,20 @@
   <!-- End Google Analytics -->
   {%- endif %}
 
-  <!-- Begin highlight.js support -->
-  <!-- Highlight.js core -->
-  <script src="{{ site.baseurl }}/js/highlightjs/highlight.min.js"></script>
-  <!-- Módulo de Python -->
-  <script src="{{ site.baseurl }}/js/highlightjs/languages/python.min.js"></script>
-  <script>hljs.highlightAll();</script>
-  <script src="{{ site.baseurl }}/js/highlight.min.js"></script>
-  <link rel="stylesheet" href="{{ site.baseurl }}/js/highlightjs/styles/github.css">
-  <link rel="stylesheet" href="/js/highlightjs/styles/ssms.css" />
+
   
+  
+  <!-- highlight.js styles -->
+<link rel="stylesheet" href="{{ site.baseurl }}/js/highlightjs/styles/github.css">
 
-  <script type="text/javascript" src="/js/highlightjs/highlight.min.js"></script>
+<!-- highlight.js core + lenguajes -->
+<script src="{{ site.baseurl }}/js/highlightjs/highlight.min.js"></script>
+<script src="{{ site.baseurl }}/js/highlightjs/languages/python.min.js"></script>
+<script src="{{ site.baseurl }}/js/highlightjs/languages/plaintext.min.js"></script>
+<script src="{{ site.baseurl }}/js/highlightjs/languages/powershell.min.js"></script>
+<script src="{{ site.baseurl }}/js/highlightjs/languages/tsql.min.js"></script>
 
-  <script type="text/javascript" src="/js/highlightjs/languages/plaintext.min.js"></script>
-  <script type="text/javascript" src="/js/highlightjs/languages/powershell.min.js"></script>
-  <script type="text/javascript" src="/js/highlightjs/languages/tsql.min.js"></script>
-
-  <script type="text/javascript"> hljs.highlightAll(); </script>
-  <!-- end highlight.js support -->
+<!-- Inicializa el resaltado -->
+<script>hljs.highlightAll();</script>
+  
 </head>
