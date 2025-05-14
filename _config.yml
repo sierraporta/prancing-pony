@@ -33,6 +33,7 @@ kramdown:
   syntax_highlighter: rouge
   smart_quotes: ["apos", "apos", "quot", "quot"]
   enable_dollar_delimiter: true
+  parse_block_html: true
     
 plugins:
   - jekyll-feed
