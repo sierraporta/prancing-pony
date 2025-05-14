@@ -106,7 +106,7 @@ De esta manera, el determinante de Cayley-Menger nos permite hacer una distinci�
 
 Para hacer esto he preparado un pequeño código para hacer todo. Se ve como sigue.
 
-<div class="custom-code-wrapper" style="box-shadow:5px 5px 10px rgba(0,0,0,0.2); background-color: rgb(128,128,128); padding:10px; border-radius:5px;">
+<div class="custom-code-wrapper" style="box-shadow:5px 5px 10px rgba(0,0,0,0.2); background-color: rgb(128,128,128); padding:10px; border-radius:1px;">
     
 ```python
 import numpy as np
@@ -140,7 +140,7 @@ El resultado de esto es:
 
 Luego podemos hacer ahora el cálculo de los radios con el siguiente código:
 
-<div style="box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); background-color: rgb(0.5, 0.50, 0.5); padding: 10px; border-radius: 5px;">
+<div class="custom-code-wrapper" style="box-shadow:5px 5px 10px rgba(0,0,0,0.2); background-color: rgb(128,128,128); padding:10px; border-radius:1px;">
     
 ```python
 # Function to calculate e1, e2, e3 based on the formula
