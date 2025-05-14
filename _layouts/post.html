@@ -19,10 +19,7 @@ layout: default
       {%- endif -%}</p>
   </header>
 
-  <div class="share-links">
-    {% include sharelinks.html %}
-  </div>
-
+  
   <div class="post-content e-content" itemprop="articleBody">
     {{ content }}
     {% include navlinks.html %}
@@ -32,6 +29,10 @@ layout: default
   <button id="like-btn">👍 <span id="like-count">0</span></button>
   <button id="dislike-btn">👎 <span id="dislike-count">0</span></button>
 </div>
+
+  <div class="share-links">
+    {% include sharelinks.html %}
+  </div>
 
 <script>
 (function(){
