@@ -1,4 +1,3 @@
-
 <!-- Site build date: {{ "now" | date: "%FT%T%z" }} -->
 <head>
   <meta charset="utf-8">
@@ -9,8 +8,8 @@
   {% seo %}
   <!-- End SEO -->
 
-  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
-  <link rel="stylesheet" type="text/css" href="/css/override.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/override.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/main.css">
 
   {% feed_meta %}
 
@@ -21,8 +20,10 @@
   {%- endif %}
 
   <!-- Begin highlight.js support -->
+  <script src="{{ site.baseurl }}/js/highlight.min.js"></script>
   <link rel="stylesheet" href="/js/highlightjs/styles/github.css">
   <link rel="stylesheet" href="/js/highlightjs/styles/ssms.css" />
+  
 
   <script type="text/javascript" src="/js/highlightjs/highlight.min.js"></script>
 
