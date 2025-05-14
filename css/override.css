@@ -57,5 +57,5 @@ code.hljs {
   background-color: transparent !important;
   border: none !important;
   border-radius: 0 !important;
-  padding: 1em !important;          /* opcional: si quieres quitar también el padding */
+  padding: 0 !important;          /* opcional: si quieres quitar también el padding */
 }
