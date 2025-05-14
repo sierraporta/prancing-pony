@@ -181,10 +181,10 @@ Lo cual da como resultado:
 
 Tras aplicar el método matemático del determinante de Cayley-Menger a las distancias entre las ciudades clave del mundo de *Game of Thrones*, hemos logrado obtener cuatro posibles soluciones para el radio de las esferas que podrían representar la curvatura del espacio en este mundo ficticio. Las soluciones obtenidas son:
 
-- $$R_1 \approx 172.085 \, \text{mi}$$
-- $$R_2 \approx 649.9242 \, \text{mi}$$
-- $$R_3 \approx 754.432 \, \text{mi}$$
-- $$R_4 \approx 2598.1423 \, \text{mi}$$
+- $R_1 \approx 172.085 \, \text{mi}$
+- $R_2 \approx 649.9242 \, \text{mi}$
+- $R_3 \approx 754.432 \, \text{mi}$
+- $R_4 \approx 2598.1423 \, \text{mi}$
 
 Estas soluciones indican que, en realidad, el mundo de *Game of Thrones* no es plano, sino que tiene una curvatura esférica. Las distancias entre las ciudades no siguen un patrón lineal que se asociaría con un espacio plano, sino que presentan una estructura que puede ser mejor comprendida mediante la geometría esférica.
 
