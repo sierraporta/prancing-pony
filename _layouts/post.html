@@ -28,5 +28,45 @@ layout: default
     {% include navlinks.html %}
   </div>
 
+  <div class="like-dislike">
+  <button id="like-btn">👍 <span id="like-count">0</span></button>
+  <button id="dislike-btn">👎 <span id="dislike-count">0</span></button>
+</div>
+
+<script>
+(function(){
+  //​ Identificador único para este post (usa la URL o slug)
+  const slug = '{{ page.url }}';
+  const likeKey = 'like-' + slug;
+  const dislikeKey = 'dislike-' + slug;
+
+  //​ Recuperar conteos o iniciarlos a 0
+  let likes    = parseInt(localStorage.getItem(likeKey   ) || '0');
+  let dislikes = parseInt(localStorage.getItem(dislikeKey) || '0');
+
+  //​ Refencia a los spans
+  const likeCountEl    = document.getElementById('like-count');
+  const dislikeCountEl = document.getElementById('dislike-count');
+  const likeBtn        = document.getElementById('like-btn');
+  const dislikeBtn     = document.getElementById('dislike-btn');
+
+  //​ Inicializar la UI
+  likeCountEl.textContent    = likes;
+  dislikeCountEl.textContent = dislikes;
+
+  //​ Funciones de voto
+  likeBtn.addEventListener('click', function(){
+    likes++;
+    localStorage.setItem(likeKey, likes);
+    likeCountEl.textContent = likes;
+  });
+  dislikeBtn.addEventListener('click', function(){
+    dislikes++;
+    localStorage.setItem(dislikeKey, dislikes);
+    dislikeCountEl.textContent = dislikes;
+  });
+})();
+</script>
+
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
