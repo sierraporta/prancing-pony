@@ -1,0 +1,40 @@
+# Número \(\pi\), azar y ciencia de datos: estimarlo lanzando palitos
+
+Cada 14 de marzo celebramos el **Día de \(\pi\)**, una de las constantes más famosas de las matemáticas. Normalmente aparece asociada a círculos, geometría clásica y fórmulas conocidas desde la escuela. Pero hay una forma mucho más inesperada —y, en mi opinión, mucho más hermosa— de aproximarse a \(\pi\): **usando azar, simulación computacional y análisis de datos**.
+
+En esta pequeña exploración quise recuperar un experimento clásico de probabilidad: el **experimento de Buffon**. La idea es simple y elegante. Imaginemos una hoja con líneas paralelas igualmente espaciadas. Luego lanzamos sobre ella muchos palitos de la misma longitud y contamos cuántos cruzan una de las líneas. Sorprendentemente, esa proporción contiene información suficiente para construir una estimación de \(\pi\).
+
+Lo interesante aquí no es solo la matemática, sino también la perspectiva de **ciencia de datos**: generamos datos aleatorios, observamos un fenómeno, estimamos un parámetro, visualizamos la incertidumbre y estudiamos cómo la estimación mejora cuando aumenta el tamaño de muestra. En otras palabras, detrás de una constante clásica aparece todo un laboratorio de simulación, inferencia y visualización.
+
+## Una idea sencilla, un resultado profundo
+
+Cuando el número de lanzamientos es pequeño, la estimación de \(\pi\) puede variar bastante. A veces queda por debajo, a veces por encima. Pero al aumentar la cantidad de palitos, la estimación tiende a estabilizarse alrededor del valor real. Esa convergencia es una forma muy visual de entender cómo el azar, cuando se observa muchas veces, empieza a revelar estructura.
+
+A continuación muestro una visualización del experimento. Los palitos que cruzan alguna línea aparecen resaltados, y a partir de esa cuenta se obtiene una estimación de \(\pi\).
+
+![Experimento de Buffon]({{ site.baseurl }}/Figures/BuffonPi.png)
+
+Más allá de una sola corrida, también resulta interesante mirar la **variabilidad entre repeticiones**. Si repetimos el experimento muchas veces con el mismo número de lanzamientos, obtenemos una distribución de estimaciones: no un valor único, sino una nube de posibles resultados alrededor de \(\pi\).
+
+![Distribución de estimaciones de pi]({{ site.baseurl }}/Figures/DistriPi.png)
+
+Y si seguimos aumentando el número de palitos, observamos la idea central de la simulación Monte Carlo: la estimación se vuelve más estable y se acerca progresivamente al valor real.
+
+![Convergencia de la estimación de pi]({{ site.baseurl }}/Figures/ValuesPi.png)
+
+## Una pequeña pieza interactiva
+
+Además de las figuras estáticas, preparé una visualización interactiva en la que puede cambiarse el número de palitos lanzados y observar cómo cambia la estimación. Esa parte permite ver de manera inmediata algo muy importante en estadística y ciencia de datos: **más datos no garantizan perfección, pero sí suelen mejorar la estabilidad de nuestras estimaciones**.
+
+<iframe 
+  src="{{ site.baseurl }}/interactive/buffon_embed.html" 
+  width="950" 
+  height="720" 
+  style="border:none;">
+</iframe>
+
+## Cierre
+
+El experimento de Buffon es una joya pedagógica porque conecta, con una sola idea, **probabilidad, geometría, simulación y ciencia de datos**. Nos recuerda que \(\pi\) no vive solamente en los círculos: también puede emerger del azar cuando lo observamos con paciencia, datos y un poco de código.
+
+Quizás esa sea una de las lecciones más bonitas del Día de \(\pi\): incluso una constante tan clásica puede convertirse en una excusa perfecta para hablar de modelado, incertidumbre y visualización computacional. Y eso, en el fondo, también es hacer ciencia de datos.
