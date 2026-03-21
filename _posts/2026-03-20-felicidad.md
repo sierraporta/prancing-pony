@@ -1,7 +1,5 @@
 # Datos, felicidad y primeros vuelos: así arrancaron mis estudiantes de Ciencia de Datos
 
-*Marzo 2026*
-
 ---
 
 Este semestre comenzó con una apuesta que, lo confieso, tenía algo de riesgo calculado: pedirle a estudiantes de **primer semestre de Ciencia de Datos** que no solo analizaran datos reales, sino que construyeran aplicaciones web con dashboards de visualización, publicadas y abiertas al mundo. Sin guion completo. Sin red de protección total. Con datos del **World Happiness Report** como materia prima, y con Colombia como lente principal.
@@ -37,7 +35,7 @@ Catorce grupos. Catorce maneras distintas de leerle la felicidad a Colombia. Aqu
 <p style="text-align:center;">
   <img src="{{ '/Figures/proyectos_felicidad_collage.png' | relative_url }}"
        alt="Proyectos felicidad collage"
-       style="width:58%; height:auto;">
+       style="width:98%; height:auto;">
 </p>
 
 
@@ -138,5 +136,28 @@ La **ciencia de datos no empieza con algoritmos**, empieza con preguntas. Y esto
 El portafolio ya empezó. Que siga creciendo.
 
 ---
+
+> ## 🙏 Gracias, estudiantes
+>
+> A ustedes, que llegaron al primer semestre sin saber exactamente qué era la ciencia de 
+> datos pero con una curiosidad que ningún currículo podría contener. A los que preguntaron 
+> cuando no entendieron, y también a los que se lanzaron sin preguntar. A los que se 
+> quedaron hasta tarde depurando un error en el código, a los que eligieron una paleta de 
+> colores con el mismo cuidado con que eligieron su argumento, a los que decidieron que sus 
+> datos merecían una historia y no solo una tabla.
+>
+> Gracias por ser genuinos. Por no conformarse con lo mínimo cuando podían dar más. Por 
+> atreverse a hablarle al país desde los datos, con la mezcla rara de rigor y emoción que 
+> solo tienen quienes están aprendiendo de verdad. Por romper, desde el primer semestre, el 
+> esquema del estudiante que entrega y espera —y convertirse en el estudiante que construye, 
+> publica y comparte.
+>
+> Este trabajo no es solo un proyecto de grado cero. Es la primera línea de un portafolio 
+> que apenas empieza, y ya dice mucho de quiénes son: inteligentes, apasionados, ansiosos 
+> por aprender y por aportar. Con ustedes, enseñar no es un esfuerzo: es un privilegio.
+>
+> **Gracias, de verdad.** 🇨🇴
+
+--- 
 
 *Las aplicaciones están disponibles públicamente. Si eres docente, reclutador o simplemente alguien curioso sobre la felicidad en Colombia y América Latina, te invito a explorarlas.*
