@@ -5,7 +5,7 @@ En El principito (**El principito** (en francés: *Le Petit Prince*) es una nove
 ![elprincipito1]({{ site.baseurl }}/Figures/elprincipito_sombrero.png)
 <div align="center">
 
-<sub><i>**“Lo esencial no es visible a simple vista.”** Lo que los adultos interpretan como un sombrero es, en realidad, una boa que ha devorado un elefante: una metáfora sobre los límites de la percepción superficial y la pérdida de la imaginación interpretativa.  </i></sub>
+<sub><i>**“Lo esencial no es visible a simple vista.”** Lo que los adultos interpretan como un sombrero es, en realidad, una boa que ha devorado un elefante: una metáfora sobre los límites de la percepción superficial y la pérdida de la imaginación interpretativa.  *Imagen generada con inteligencia artificial con fines ilustrativos.*</i></sub>
 </div>
 
 En ciencia de datos, ese “sombrero” adopta la forma de una tabla de Excel, una serie temporal o un dashboard lleno de gráficos impecables. Para muchos, esos objetos son el final del camino: datos organizados, visualizaciones claras, conclusiones rápidas. Pero para un científico de datos, ese es apenas el punto de partida. Su tarea no es describir el sombrero, sino preguntarse si, en realidad, hay una serpiente… y dentro de ella, un elefante.
@@ -21,7 +21,7 @@ Aquí entra en juego un riesgo técnico bien conocido pero sistemáticamente ign
 ![elprincipito2]({{ site.baseurl }}/Figures/elprincipito_datos.png)
 <div align="center">
  
-<sub><i>**Como en El principito, los datos rara vez dicen explícitamente lo que contienen**. Lo que parece ruido o variación aleatoria puede esconder estructura: tendencia, estacionalidad o patrones latentes. La tarea del científico de datos consiste en distinguir entre ver un sombrero… o descubrir el elefante dentro de la serpiente. </i></sub>
+<sub><i>**Como en El principito, los datos rara vez dicen explícitamente lo que contienen**. Lo que parece ruido o variación aleatoria puede esconder estructura: tendencia, estacionalidad o patrones latentes. La tarea del científico de datos consiste en distinguir entre ver un sombrero… o descubrir el elefante dentro de la serpiente.  *Imagen generada con inteligencia artificial con fines ilustrativos.*</i></sub>
 </div>
 
 El problema no es solo metodológico, sino cultural. Se ha instalado la idea de que más datos implican automáticamente más verdad, y que algoritmos más complejos garantizan mejores decisiones. Pero los datos no son neutrales: están incompletos, sesgados, discretizados. Son, en el mejor de los casos, sombras de procesos continuos y complejos. Pretender que un modelo captura “la realidad” es olvidar que toda inferencia está mediada por supuestos, elecciones de modelado y limitaciones instrumentales.
