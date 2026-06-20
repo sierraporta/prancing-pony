@@ -1,9 +1,5 @@
 # **El mundo no está hecho de datos**
 
-*David Sierra Porta*
-
-*Escuela de Transformación Digital, Universidad Tecnológica de Bolívar, Cartagena de Indias, Colombia*
-
 ![Panel de métricas de una plataforma digital, mostrando CTR, costo por conversión y Quality Score]({{ site.baseurl }}/Figures/stephen-dawson-qwtCeJ5cLYs-unsplash.jpg)
 *Foto: [Stephen Dawson](https://unsplash.com/@dawson2406?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) en [Unsplash](https://unsplash.com/photos/turned-on-monitoring-screen-qwtCeJ5cLYs?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)*
 
