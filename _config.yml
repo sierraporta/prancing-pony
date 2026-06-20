@@ -11,6 +11,11 @@ description: "Este blog es un espacio dedicado a compartir mis experiencias y re
 email: "sierraporta@gmail.com"
 #twitter_username: "twitteruser"
 github_username: "sierraporta"
+
+# 👉 Pega aquí tu Measurement ID de Google Analytics 4 (formato G-XXXXXXXXXX)
+#    Lo consigues en analytics.google.com → Admin → Flujos de datos → tu sitio web
+#    Descomenta la siguiente línea y reemplaza el valor:
+google_analytics: "G-D9N4WYT7LX"
 #linkedin_username: "linkedinuser"
 #facebook_username: username
 #flickr_username: username
@@ -52,5 +57,3 @@ defaults:
 
 include:
   - posts
-    
-
