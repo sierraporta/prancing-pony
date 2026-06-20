@@ -26,42 +26,65 @@ layout: default
   </div>
 
   <div class="like-dislike">
-  <button id="like-btn">👍 <span id="like-count">0</span></button>
-  <button id="dislike-btn">👎 <span id="dislike-count">0</span></button>
+  <button id="like-btn">👍 <span id="like-count">–</span></button>
+  <button id="dislike-btn">👎 <span id="dislike-count">–</span></button>
 </div>
 
   <script>
 (function(){
-  //​ Identificador único para este post (usa la URL o slug)
-  const slug = '{{ page.url }}';
-  const likeKey = 'like-' + slug;
-  const dislikeKey = 'dislike-' + slug;
+  // 👉 Reemplaza esta URL por la de tu Worker una vez desplegado en Cloudflare
+  //    (Workers & Pages → tu worker → "Visit" te da la URL, algo como
+  //     https://prancing-pony-reactions.TU-SUBDOMINIO.workers.dev)
+  const REACTIONS_API = 'https://prancing-pony-reactions.TU-SUBDOMINIO.workers.dev';
 
-  //​ Recuperar conteos o iniciarlos a 0
-  let likes    = parseInt(localStorage.getItem(likeKey   ) || '0');
-  let dislikes = parseInt(localStorage.getItem(dislikeKey) || '0');
+  // Identificador único para este post (usa la URL/slug)
+  const slug     = '{{ page.url }}';
+  const votedKey = 'voted-' + slug;
 
-  //​ Refencia a los spans
-  const likeCountEl    = document.getElementById('like-count');
-  const dislikeCountEl = document.getElementById('dislike-count');
   const likeBtn        = document.getElementById('like-btn');
   const dislikeBtn     = document.getElementById('dislike-btn');
+  const likeCountEl    = document.getElementById('like-count');
+  const dislikeCountEl = document.getElementById('dislike-count');
 
-  //​ Inicializar la UI
-  likeCountEl.textContent    = likes;
-  dislikeCountEl.textContent = dislikes;
+  function render(counts){
+    likeCountEl.textContent    = counts.likes;
+    dislikeCountEl.textContent = counts.dislikes;
+  }
 
-  //​ Funciones de voto
-  likeBtn.addEventListener('click', function(){
-    likes++;
-    localStorage.setItem(likeKey, likes);
-    likeCountEl.textContent = likes;
-  });
-  dislikeBtn.addEventListener('click', function(){
-    dislikes++;
-    localStorage.setItem(dislikeKey, dislikes);
-    dislikeCountEl.textContent = dislikes;
-  });
+  function lockButtons(){
+    likeBtn.disabled    = true;
+    dislikeBtn.disabled = true;
+  }
+
+  // Cargar los conteos reales (globales, de todos los visitantes) al abrir la página
+  fetch(REACTIONS_API + '?slug=' + encodeURIComponent(slug))
+    .then(r => r.json())
+    .then(render)
+    .catch(() => render({ likes: '–', dislikes: '–' }));
+
+  // Si este navegador ya votó antes en este post, deja los botones bloqueados
+  if (localStorage.getItem(votedKey)) {
+    lockButtons();
+  }
+
+  function vote(type){
+    if (localStorage.getItem(votedKey)) return;
+    fetch(REACTIONS_API, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ slug: slug, type: type })
+    })
+      .then(r => r.json())
+      .then(function(counts){
+        render(counts);
+        localStorage.setItem(votedKey, type);
+        lockButtons();
+      })
+      .catch(() => alert('No se pudo registrar tu voto. Intenta de nuevo más tarde.'));
+  }
+
+  likeBtn.addEventListener('click', function(){ vote('like'); });
+  dislikeBtn.addEventListener('click', function(){ vote('dislike'); });
 })();
 </script>
 
